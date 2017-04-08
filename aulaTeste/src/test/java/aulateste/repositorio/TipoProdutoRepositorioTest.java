@@ -24,6 +24,7 @@ public class TipoProdutoRepositorioTest {
 		tipoProduto.setNome("Comida");
 		TipoProduto tipoProdutoSalvo = tipoProdutoRepositorio.save(tipoProduto);
 		assertNotNull(tipoProdutoSalvo.getCodigo());
+		tipoProdutoRepositorio.delete(tipoProdutoSalvo);
 	}
 	
 	
